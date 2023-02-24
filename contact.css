@@ -1,0 +1,94 @@
+.shadowBox > section > article {
+    margin: 5%;
+}
+
+#contactSection {
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 0%;
+    padding-bottom: 30px;
+    background-color: var(--sand);
+    border-top: 4px solid var(--darkBlue);
+}
+
+#contactSection > article {
+   margin-bottom: 20px; 
+}
+
+.contactArticle {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contactArticle > .txtLeft > h2 {
+    font-size: 140%;
+    color: var(--darkBlue);
+    margin-bottom: 0px;
+}
+
+.contactDiscription {
+    color: var(--textGrey);
+    max-width: 500px;
+    margin-right: 100px; 
+}
+
+.contactDiscription > a {
+    color: var(--darkBlue);
+    text-decoration: none;
+}
+
+.contactDiscription > a:hover{
+    text-decoration: underline;
+}
+
+.contactArticle > .txtRight > img {
+    height: 320px;
+}
+
+.contactArticle > .txtRight {
+    text-align: center;
+    font-size: 80%;
+}
+
+@media screen and (max-width: 680px) {
+    #contactSection {
+        width: 100%;
+        margin: 0px;
+    }
+
+    .contactArticle {
+        display: block;
+        width: 100%;
+    }
+
+    .contactArticle > .txtLeft {
+        margin-bottom: 60px;
+    }
+
+    .contactArticle > .txtRight > img {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .contactArticle > .txtRight {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 1000px) and (min-width: 680px) {
+    .contactArticle > .txtRight > img {
+        height: 300px;
+    }
+
+    .contactDiscription {
+        font-size: 80%;
+        max-width: 300px;
+        margin-right: 60px; 
+    }
+
+    .contactArticle > .txtLeft > h2 {
+        font-size: 100%;
+    }
+}

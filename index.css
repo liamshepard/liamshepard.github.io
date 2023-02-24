@@ -1,0 +1,377 @@
+/* * {
+    background: #000 !important;
+    color: #0f0 !important;
+    outline: solid #f00 1px !important;
+  } */
+
+  :root {
+    --darkBlue: rgb(26, 52, 89);
+    --xdarkBlue: rgb(0, 31, 74);
+    --sand: rgb(247, 246, 242);
+    --textGrey: rgb(74, 73, 70);
+  }
+
+  nav {
+    top: 0px;
+    z-index: 5;
+    position: fixed;
+    width: 96%;
+    margin: 0px;
+    display: grid;
+    grid-template: 1fr / 1fr 5fr;
+    background-color: var(--darkBlue);
+    padding: 2%;
+    font-family: optima, sans-serif;
+    font-size: large;
+    overflow-x: hidden;
+}
+
+nav > .leftSideNav {
+    grid-area: 1/1/2/2;
+}
+
+nav > .rightSideNav {
+    grid-area: 1/2/2/3;
+    text-align: right;
+    margin-right: 50px;
+}
+
+nav > .rightSideIcon {
+    display: none;
+}
+
+nav > section > a {
+    padding-left: 20px;
+    color: var(--sand);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: lightblue;
+}
+
+body {
+    overflow-x: hidden;
+    margin: 0px;
+    width: 100%;
+    background-color: white;
+}
+
+section {
+    width: 100%;
+}
+
+.lineDivider {
+    margin-top: 20px;
+    height: 4px;
+    width: 110%;
+    margin-left: -5%;
+    background-color: var(--darkBlue);
+}
+
+#indexSection1 {
+    top: 0px;
+    position: fixed;
+    z-index: 1;
+    height: 600px;
+}
+
+#indexSection1 > img {
+    width: 100%;
+    position: absolute;
+}
+
+#indexSection1 > h1 {
+    margin-top: 25%;
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    font-family: fantasy;
+    font-size: 500%;
+    font-weight: 800;
+    color: white;
+}
+
+.section1OverlayDiv {
+    position: relative;
+    z-index: 3;
+    margin-top: 550px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.section1Overlay {
+    width: 25%;
+    background-color: var(--darkBlue);;
+    position: relative;
+    z-index: 3;
+    text-align: center;
+    padding: 20px;
+    font-family: optima, sans-serif;
+    padding-top: 0px;
+    border-radius: 40px;
+}  
+
+.section1Overlay > h3 {
+    font-family: optima, sans-serif;
+    color: var(--sand);
+    font-size: 150%;
+    font-weight: 400;
+    text-align: center;
+    margin: 10px;
+    height: 60px;
+}
+
+.section1Overlay > img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.shadowBox {  
+    width: 100%;
+}
+
+#indexSection2,
+#indexSection3 {
+    position: relative;
+    z-index: 2;
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 90%;
+    display: grid;
+    background-color: white;
+    font-family: optima, sans-serif;
+}
+
+#indexSection2 {
+    margin-top: -50px;
+    padding-top: 10%;
+    grid-template: min-content 100px min-content / 1fr 1fr
+}
+
+#indexSection2 > img {
+    width: 84%;
+    margin-left: 8%;
+    align-self: top;
+
+}
+
+.shadowBox > section > article {
+    margin: 10%;
+    margin-top: 0px;
+    color: var(--textGrey);
+    font-size: 120%;
+}
+
+.shadowBox > section > article > h2 {
+    color: var(--darkBlue);
+}
+
+#indexSection2Img1 {
+    grid-area: 1/1/3/2;
+}
+
+#indexSection2Artice1 {
+    grid-area: 1/2/2/3;
+}
+
+#indexSection2Img2 {
+    grid-area: 2/2/4/3;
+}
+
+#indexSection2Artice2 {
+    grid-area: 3/1/4/2;
+}
+
+
+#indexSection3 {
+    grid-template: 1fr 3fr / 1fr 1fr 1fr;
+    width: 100%;
+    padding-top: 0px;
+}
+
+#indexSection3 > img {
+    width: 94%;
+    margin-left: 3%;
+    margin-right: 3%;
+    object-fit: cover;
+    height: 50%;
+}
+
+#indexSection3Article1 {
+    width: 90%;
+    grid-area: 1/1/2/4;
+    margin-left: 5%;
+    margin-top: 50px;
+}
+
+.inTxtLink {
+    text-decoration: none;
+    color: var(--darkBlue);
+}
+
+.inTxtLink:hover {
+    text-decoration: underline;
+}
+   
+
+#indexSection3Article1 > h2{
+    text-align: center
+}
+
+#indexSection3Img1 {
+    grid-area: 2/1/3/2;
+}
+
+#indexSection3Img2 {
+    grid-area: 2/2/3/3;
+}
+
+#indexSection3Img3 {
+    grid-area: 2/3/3/4;
+}
+
+
+footer {
+    padding: 20px;
+    position: relative;
+    z-index: 3;
+    width: 100%;
+    height: 120px;
+    background-color: var(--darkBlue);
+    margin-top: 0px;
+}
+
+#footerContact {
+    content-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: max-content;
+    font-family: optima, sans-serif;
+    color: var(--sand);
+    font-size: 100%;
+}
+
+#footerContact > article > p > a {
+    color: lightblue;
+    text-decoration: none;
+}
+
+#footerContact > article > p > a:hover {
+    text-decoration: underline;
+}
+
+
+
+@media screen and (max-width: 680px) {
+
+    nav > section {
+        font-size: 150%;
+    }
+
+   nav > .rightSideIcon {
+        text-align: right;
+        display: inline;
+        z-index: 3;
+    }
+
+    nav > .rightSideNav {
+        display: none;
+    }
+
+    nav > .rightSideNavDisplay {
+        z-index: 2;
+        position: fixed;
+        top: 0px;
+        height: 100%;
+        width: 50%;
+        margin-left: 50%;
+        background-color: var(--xdarkBlue);
+    }
+
+    nav > .rightSideNavDisplay > a{
+        font-size: 100%;
+        width: 100%;
+        display: block;
+        padding: 30px
+    }
+    
+
+    #indexSection2,
+    #indexSection3 {
+        margin-left: 0px;
+        padding: 0px;
+        padding-top: 20px;
+        width: 100%;
+        display: block;
+    }
+    
+    .shadowBox {  
+        width: 100%;
+        margin: 0px;
+    }
+    
+    #indexSection3 > img {
+        width: 86%;
+        margin: 7%;
+    }
+
+    
+    .section1Overlay {
+        display: none;
+    }
+
+    a:hover {
+        text-decoration: none;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    #indexSection1 > h1 {
+        font-size: 400%;
+        margin-top: 25%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #indexSection2Img1 {
+        grid-area: 1/1/2/2;
+    }
+    
+    /* #indexSection2Artice1 {
+        grid-area: 1/2/3/3;
+    } */
+
+    /* #indexSection2Img2 {
+        grid-area: 3/2/4/3;
+    } */
+    
+    #indexSection2Artice2 {
+        grid-area: 2/1/3/2;
+    }
+    
+    .section1Overlay > img {
+    width: 100%;
+    height: 130px;
+    object-fit: cover;
+    text-align: center;
+}
+    
+}
+
+/* @media screen and (max-width: 782px) and (min-width: 680px) {
+    #indexSection3 {
+        margin-top: -100px;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    #indexSection3 {
+        margin-top: -50px;
+    }
+} */

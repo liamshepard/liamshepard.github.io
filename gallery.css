@@ -1,0 +1,53 @@
+#galleryUL {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: var(--sand);
+    border-top: 4px solid var(--darkBlue);
+    columns: 3;
+    padding-left: 0px;
+    list-style-type: none;
+    height: min-content;
+}
+
+.galleryLI {
+    display: inline-block;
+    margin: 0px;
+    width: 100%;
+}
+
+.galleryFig {
+    width: 100%;
+    margin: 5%;
+}
+
+.galleryFig > figcaption {
+    width: 100%;
+    text-align: center;
+    font-family: optima, sans-serif;
+    font-size: 110%;
+    margin-top: 15px;
+    margin-bottom: 50px;
+}
+
+.galleryFig > img {
+width: 90%;
+}
+
+@media screen and (max-width: 900px) {
+    #galleryUL {
+        columns: 2;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    #galleryUL {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        background-color: var(--sand);
+        border-top: 4px solid var(--darkBlue);
+        columns: 1;
+        padding-left: 0px;
+        list-style-type: none;
+        height: min-content;
+    }
+}

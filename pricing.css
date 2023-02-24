@@ -1,0 +1,29 @@
+#priceSection {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: var(--sand);
+    border-top: 4px solid var(--darkBlue);
+}
+
+#priceSection > article {
+   margin-bottom: 20px; 
+}
+
+.priceArticle {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--darkBlue);
+}
+
+.priceArticle > .txtLeft > h2 {
+    font-size: 120%;
+    color: var(--darkBlue);
+    margin-bottom: 0px;
+}
+
+.priceArticle > .txtLeft > p {
+    font-size: 80%;
+    color: var(--textGrey)
+}
+
