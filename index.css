@@ -11,6 +11,11 @@
     --textGrey: rgb(74, 73, 70);
   }
 
+* {
+    overflow-x: hidden;
+  }
+
+
   nav {
     top: 0px;
     z-index: 5;
